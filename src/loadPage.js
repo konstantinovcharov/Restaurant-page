@@ -1,7 +1,3 @@
-export default function printMe() {
-    console.log('I get called from print.js!');
-  }
-
 export function loadHeader() {
     const header = document.createElement('header');
     const headerH1 = document.createElement('h1');
@@ -13,13 +9,16 @@ export function loadHeader() {
     const navLi3 = document.createElement('li');
     const navA1 = document.createElement('a');
     navA1.setAttribute('href', '#');
+    navA1.setAttribute('id', 'Home');
     navA1.textContent = "Home";
     const navA2 = document.createElement('a');
     navA2.setAttribute('href', '#');
+    navA2.setAttribute('id', "Menu");
     navA2.textContent = "Menu";
     const navA3 = document.createElement('a');
     navA3.setAttribute('href', '#');
-    navA3.textContent = "About us";
+    navA3.textContent = "Contact";
+    navA3.setAttribute('id', 'Contact');
     navLi1.appendChild(navA1);
     navLi2.appendChild(navA2);
     navLi3.appendChild(navA3);
